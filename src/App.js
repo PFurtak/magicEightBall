@@ -27,7 +27,10 @@ const App = () => {
           {query === '' ? (
             <h3>Your answer awaits...</h3>
           ) : (
-            <AnswerResponse response={response} />
+            <div>
+              <h2>{query}</h2>
+              <AnswerResponse response={response} />
+            </div>
           )}
         </div>
       </header>
