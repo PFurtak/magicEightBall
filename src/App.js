@@ -20,10 +20,15 @@ const App = () => {
     <div className='App'>
       <header className='App-header'>
         <h1> Magic Eight Ball</h1>
+        <h2> What do you seek? </h2>
         <UserQuestion questionText={(text) => setQuery(text)} />
         <br />
         <div>
-          <AnswerResponse response={response} />
+          {query === '' ? (
+            <h3>Your answer awaits...</h3>
+          ) : (
+            <AnswerResponse response={response} />
+          )}
         </div>
       </header>
     </div>
