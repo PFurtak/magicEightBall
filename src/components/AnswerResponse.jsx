@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AnswerResponse = () => {
+const AnswerResponse = ({ response }) => {
   return (
     <div>
-      <h3>static response</h3>
+      <h3>{response}</h3>
     </div>
   );
 };
